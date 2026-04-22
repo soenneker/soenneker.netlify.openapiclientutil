@@ -1,20 +1,19 @@
 using Soenneker.Netlify.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Netlify.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class NetlifyOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class NetlifyOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly INetlifyOpenApiClientUtil _openapiclientutil;
 
-    public NetlifyOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public NetlifyOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<INetlifyOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
