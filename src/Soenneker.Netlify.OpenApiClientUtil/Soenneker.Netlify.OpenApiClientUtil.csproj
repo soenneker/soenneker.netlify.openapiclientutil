@@ -42,7 +42,7 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Netlify.HttpClients" Version="4.0.101" />
-        <PackageReference Include="Soenneker.Netlify.OpenApiClient" Version="4.0.39" />
-        <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.830" />
+        <PackageReference Include="Soenneker.Netlify.OpenApiClient" Version="4.0.41" />
+        <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.831" />
     </ItemGroup>
 </Project>
