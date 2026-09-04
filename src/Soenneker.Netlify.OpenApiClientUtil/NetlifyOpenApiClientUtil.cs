@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Netlify.OpenApiClientUtil;
 
+/// <inheritdoc cref="INetlifyOpenApiClientUtil" />
 public sealed class NetlifyOpenApiClientUtil : INetlifyOpenApiClientUtil
 {
     private readonly AsyncSingleton<NetlifyOpenApiClient> _client;
