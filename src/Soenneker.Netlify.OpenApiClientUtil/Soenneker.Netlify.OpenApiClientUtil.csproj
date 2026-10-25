@@ -44,6 +44,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Netlify.HttpClients" Version="4.0.159" />
-        <PackageReference Include="Soenneker.Netlify.OpenApiClient" Version="4.0.65" />
+        <PackageReference Include="Soenneker.Netlify.OpenApiClient" Version="4.0.66" />
     </ItemGroup>
 </Project>
